@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAT</title>
+    <link rel="stylesheet" href="testebonito.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <p>Menu</p>
+            <div class="sidebar">
+                <a href="ibiza.html"><img src="_img/ibziass.webp " alt="SEAT Ibiza"></a>
+                <a href="#">IBIZA</a>
+                <a href="leon.html"><img src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png"></a>
+                <a href="#">LEON</a><br><br><br>
+                <a href="ateca.html"><img src="_img/pngwing.com.png" alt="ATECA"></a>
+                <a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ATECA</a><br><br><br>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.menu').addEventListener('click', function () {
+                const sidebar = this.querySelector('.sidebar');
+                if (sidebar) {
+                    setTimeout(function () {
+                        sidebar.classList.toggle('show');
+                    }, 1000);
+                }
+            });
+    
+            document.querySelector('.sidebar').addEventListener('mouseleave', function () {
+                this.classList.remove('show');
+            });
+    
+            document.addEventListener('click', function (e) {
+                const sidebar = document.querySelector('.sidebar');
+                const menu = document.querySelector('.menu');
+    
+                if (!menu.contains(e.target) && !sidebar.contains(e.target)) {
+                    sidebar.classList.remove('show');
+                }
+            });
+        </script>
+        <nav>
+            <ul>
+                <li><a href="#sobre">O que é SEAT</a></li>
+                <li><a href="#Caracteristicas">Caracteristicas</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+        <a href="Index.html">
+            <h1>SEAT</h1>
+        </a>
+        
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>O que é o SEAT Leon</h2>
+            <p> O recém-lançado SEAT Leon é um compacto esportivo icônico, conhecido por seu design inovador, tecnologia avançada e popularidade. Oferece versões híbridas plug-in, além de motores a gasolina e diesel, refletindo o compromisso da SEAT com sustentabilidade e performance.</p>
+            <img src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png" alt="Carro clássico SEAT" height="150">
+        </section>
+
+        <section id="Características">
+            <h2>Características</h2>
+            <p id="pp"><b>Preco Inicial:</b> de 32.000 euros<br>
+                <BR>
+                    <b> Produção</b> com bastante sustentabilidade eletrica e com eficiencia energetica<br>
+                <BR>
+                    <b>Motorizações disponíveis:</b><br>
+                <BR>
+                    <b>Gasolina:</b> 1.5 TSI de 115 cv ou 150 cv.<br>
+                <BR>
+                    <b> Híbrido:</b> 204 cv com motor elétrico integrado<br>
+                <BR>
+                    <b> Diesel:</b> 2.0 TDI com opções de 115 cv ou 150 cv.<br>
+                <BR>
+                    <b>Mild-Hybrid: </b>eTSI de 48V, com 115 cv ou 150 cv.<br>
+                <BR>
+                    <b>Velocidade Máxima: </b>220km/h</p>
+           
+        </div>
+     </p>
+</p>
+<h2>Video</h2>
+<div class="ibiza">
+   <video autoplay muted loop style="height: 500px; align-content: center;"> 
+    <source src="_img/2024 Seat Leon FR 150 HP - Interior, Exterior, Details - Sofia Motor Show.mp4" type="video/mp4" height="-1500">>
+</div>
+   </video> 
+        </section>
+
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.2072478789905!2d-9.143163289333385!3d38.73600615609444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933a18f6c43a5%3A0x24e5fea6519add37!2sSantogal%20Seat%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1732790994963!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </main>
+
+    <footer>
+        <p>&copy; 2024 SEAT - Todos os direitos reservados.</p>
+        <ul> 
+            <li><a href="https://www.instagram.com/seatportugal?igsh=MXhtM2FkbHlpNzhxZA==">Instagram</a></li>
+            <li><a href="https://www.facebook.com/SEATPortugal">Facebook</a></li>
+            <li><a href="https://x.com/SEATPortugal?t=aJIMgXARj_NmVDnwK1TN9Q&s=08_">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <title>SEAT</title>
+</head>
+<header>
+    <a id="tit" href="index.html"><h1>Seat</h1></a>
+    <div class="menu">
+        <p>Menu</p>
+        <div class="sidebar">
+            <a href="ibiza.html"><img src="_img/ibziass.webp " alt="SEAT Ibiza"></a>
+            <a href="#">IBIZA</a>
+            <a href="leon.html"><img src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png"></a>
+            <a href="#">LEON</a><br><br><br>
+            <a href="ateca.html"><img src="_img/pngwing.com.png" alt="ATECA"></a>
+            <a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ATECA</a><br><br><br>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.menu').addEventListener('click', function () {
+            const sidebar = this.querySelector('.sidebar');
+            if (sidebar) {
+                setTimeout(function () {
+                    sidebar.classList.toggle('show');
+                }, 1000);
+            }
+        });
+
+        document.querySelector('.sidebar').addEventListener('mouseleave', function () {
+            this.classList.remove('show');
+        });
+
+        document.addEventListener('click', function (e) {
+            const sidebar = document.querySelector('.sidebar');
+            const menu = document.querySelector('.menu');
+
+            if (!menu.contains(e.target) && !sidebar.contains(e.target)) {
+                sidebar.classList.remove('show');
+            }
+        });
+
+    </script>
+</header>
+<body>
+    <hr id="linha"><br><br><br>
+    <div class="main">
+        <p style="text-align: justify;">O recém-lançado SEAT Leon é um compacto esportivo icônico, conhecido por seu design inovador, tecnologia avançada e popularidade. Oferece versões híbridas plug-in, além de motores a gasolina e diesel, refletindo o compromisso da SEAT com sustentabilidade e performance.</p>
+        <img id="img1" src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png" alt="SEAT Leon">
+        <h2>Características</h2>
+        <BR>
+        <p id="pp">Preco Inicial de 32.000 euros<br>
+            <BR>
+            Produção com bastante sustentabilidade eletrica e com eficiencia energetica<br>
+            <BR>
+            Motorizações disponíveis:<br>
+            <BR>
+            Gasolina: 1.5 TSI de 115 cv ou 150 cv.<br>
+            <BR>
+            Híbrido: 204 cv com motor elétrico integrado<br>
+            <BR>
+            Diesel: 2.0 TDI com opções de 115 cv ou 150 cv.<br>
+            <BR>
+            Mild-Hybrid: eTSI de 48V, com 115 cv ou 150 cv.<br>
+            <BR>
+            Velocidade Máxima: 220km/h</p>
+       
+    </div>
+    <h2>Video</h2>
+   <video autoplay muted loop style="height: 350px; align-content: center;"> 
+    <source src="_img/2024 Seat Leon FR 150 HP - Interior, Exterior, Details - Sofia Motor Show.mp4" type="video/mp4">
+   </video> 
+    <h2>Localização</h2>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.700165505354!2d-8.873772989343935!3d38.540679267556946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19424f3b3b98a9%3A0x9b5a5519054efc70!2sSEAT%20CENTER%20ARRABIDA%20-%20SEAT!5e0!3m2!1spt-PT!2spt!4v1732537812869!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <li><a href="https://www.instagram.com/seatportugal?igsh=MXhtM2FkbHlpNzhxZA== " target="_blank">instagram</a></li>
+    <li><a href="https://www.facebook.com/SEATPortugal" target="_blank">Facebook</a></li>
+    <li><a href="https://x.com/SEATPortugal?t=aJIMgXARj_NmVDnwK1TN9Q&s=08 " target="_blank">Twiter</a></li>
+
+</div>
+</body>
+</html>
+-->

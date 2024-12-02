@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAT</title>
+    <link rel="stylesheet" href="testebonito.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <p>Menu</p>
+            <div class="sidebar">
+                <a href="ibiza.html"><img src="_img/ibziass.webp " alt="SEAT Ibiza"></a>
+                <a href="#">IBIZA</a>
+                <a href="leon.html"><img src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png"></a>
+                <a href="#">LEON</a><br><br><br>
+                <a href="ateca.html"><img src="_img/pngwing.com.png" alt="ATECA"></a>
+                <a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ATECA</a><br><br><br>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.menu').addEventListener('click', function () {
+                const sidebar = this.querySelector('.sidebar');
+                if (sidebar) {
+                    setTimeout(function () {
+                        sidebar.classList.toggle('show');
+                    }, 1000);
+                }
+            });
+    
+            document.querySelector('.sidebar').addEventListener('mouseleave', function () {
+                this.classList.remove('show');
+            });
+    
+            document.addEventListener('click', function (e) {
+                const sidebar = document.querySelector('.sidebar');
+                const menu = document.querySelector('.menu');
+    
+                if (!menu.contains(e.target) && !sidebar.contains(e.target)) {
+                    sidebar.classList.remove('show');
+                }
+            });
+        </script>
+        <nav>
+            <ul>
+                <li><a href="#sobre">O que é SEAT</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+        <h1>SEAT</h1>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>O que é SEAT</h2>
+            <p> A SEAT (Sociedad Española de Automóviles de Turismo) é uma montadora de automóveis da Espanha, fundada em 1950. Originalmente criada pelo governo espanhol para desenvolver a indústria automotiva do país, a SEAT foi formada em parceria com a Fiat, fabricando inicialmente modelos baseados em designs italianos.
+                Hoje, a SEAT é uma subsidiária do Grupo Volkswagen e se destaca pela produção de carros modernos, acessíveis e de alta qualidade. A marca combina design inovador, tecnologia avançada e eficiência, com modelos que atendem a diferentes estilos de vida, como Além disso, a SEAT está comprometida com a sustentabilidade, oferecendo opções de veículos híbridos e elétricos.</p>
+            <img src="_img/transferir (2).jpg" alt="Carro clássico SEAT">
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <p>A SEAT foi fundada pelo governo espanhol em 1950 para fortalecer a indústria automotiva local. Inicialmente, ela produzia carros licenciados da Fiat, sendo o SEAT 1400 seu primeiro modelo, lançado em 1953.
+
+                O SEAT 600, lançado em 1957, foi considerado o "carro do povo" na Espanha. Ele foi um dos veículos responsáveis por popularizar o uso de automóveis no país, marcando uma transformação social na década de 1960.
+    
+                O SEAT Ibiza, lançado em 1984, foi o primeiro carro projetado totalmente pela SEAT, sem colaboração da Fiat. Ele foi desenhado pela Italdesign de Giorgetto Giugiaro, com motores desenvolvidos em parceria com a Porsche.</p>
+        </section>
+
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.700165505354!2d-8.873772989343935!3d38.540679267556946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19424f3b3b98a9%3A0x9b5a5519054efc70!2sSEAT%20CENTER%20ARRABIDA%20-%20SEAT!5e0!3m2!1spt-PT!2spt!4v1732537812869!5m2!1spt-PT!2spt" width="600" height="400" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SEAT - Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/seatportugal?igsh=MXhtM2FkbHlpNzhxZA==">Instagram</a></li>
+            <li><a href="https://www.facebook.com/SEATPortugal">Facebook</a></li>
+            <li><a href="https://x.com/SEATPortugal?t=aJIMgXARj_NmVDnwK1TN9Q&s=08_">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
